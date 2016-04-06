@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="./base.css">
+  <style>
+    .app-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* fraction */
+      grid-template-rows: 100vh; /* full viewport height */
+    }
+
+    .tweets,
+    .replies,
+    .search,
+    .messages {
+      grid-row: 1;
+    }
+
+    .tweets {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      /* shorthand property
+       * grid-column: 4 / 5;
+       */
+    }
+
+    .replies {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      /* shorthand property
+       * grid-column: 2 / 3;
+       */
+    }
+
+    .search {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      /* shorthand property
+       * grid-column: 1 / 2;
+       */
+    }
+
+    .messages {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      /* shorthand property
+       * grid-column: 3 / 4;
+       */
+    }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+    <div class="tweets">Tweets</div>
+    <div class="replies">Replies</div>
+    <div class="search">Search</div>
+    <div class="messages">Messages</div>
+  </div>
+</body>
+</html>

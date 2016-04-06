@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="./base.css">
+  <style>
+    .app-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* fraction */
+      grid-template-rows: 100vh; /* full viewport height */
+      grid-template-areas: "search replies messages tweets";
+    }
+
+
+    .tweets {
+      grid-area: tweets;
+    }
+
+    .replies {
+      grid-area: replies;
+    }
+
+    .search {
+      grid-area: search;
+    }
+
+    .messages {
+      grid-area: messages;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+    <div class="tweets">Tweets</div>
+    <div class="replies">Replies</div>
+    <div class="search">Search</div>
+    <div class="messages">Messages</div>
+  </div>
+</body>
+</html>

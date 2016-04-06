@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .app-layout {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 100px 250px 1fr;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .teams {
+      grid-column: 1;
+      grid-row: 1 / 4;
+    }
+
+    .channels {
+      grid-column: 2;
+      grid-row: 1 / 4;
+    }
+
+    .header {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .messages {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+    <div class="teams">Teams</div>
+    <div class="channels">Channels</div>
+    <div class="header">Header</div>
+    <div class="messages">
+      <ul class="message-list">
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="input">
+      <input type="text" placeholder="CSS Grid Layout Module">
+    </div>
+  </div>
+</body>
+</html>

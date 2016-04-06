@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tweets,
+.replies,
+.search,
+.messages {
+  color: #fff;
+  text-align: center;
+}
+
+.tweets {
+  background-color: red;
+}
+
+.replies {
+  background-color: green;
+}
+
+.search {
+  background-color: blue;
+}
+
+.messages {
+  background-color: orange;
+}
